@@ -306,23 +306,3 @@ def create_board(board_size):
 
 man = Manager()
 man.play()
-'''
-p1 = Player(p1_color)
-p2 = Player(p2_color)
-board1 = create_board(board_size)
-for sol in p1.soldiers + p2.soldiers:
-    board1[sol.row][sol.col] = sol
-print_board(board1)
-'''
-
-
-'''
-sol1 = Soldier(p1_color, 7, 1, 10)
-sol2 = Soldier(p2_color, 6, 6, 6)
-
-board1 = create_board(board_size)
-board1[sol1.row][sol1.col] = sol1
-board1[sol2.row][sol2.col] = sol2
-print_board(board1)
-print(sol2.check_move(board1))
-'''
